@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "learn"
+version = "0.1.0"
+description = ""
+authors = ["tnhgiang <giang.tnhoang@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
