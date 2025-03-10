@@ -57,7 +57,7 @@ Tương tự như `Jenkins`, `Zabbix` cũng có `zabbix server` và `zabbix agen
 6. Cài đặt `zabbix agent` trên các `server` cần được `monitoring` và thêm vào trong `zabbix`.
 
 - Cài đặt `zabbix agent` trên các `slave server`:
-  - Làm theo hướng dẫn trên [Zabbix Packages Download] (<https://www.zabbix.com/download>). Chỉ cần cài `zabbix-agent` package thôi.
+  - Làm theo hướng dẫn trên [Zabbix Packages Download](https://www.zabbix.com/download). Chỉ cần cài `zabbix-agent` package thôi.
   - Cấu hình `zebbit agent` ở file `/etc/zabbix/zabbix-agentd.conf`:
 
     ```ini

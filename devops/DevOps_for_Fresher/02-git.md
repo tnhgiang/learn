@@ -52,16 +52,18 @@ Nhiều doanh nghiệp dùng `gitlab` làm `git server`, vì `gitlab` được t
 
 **Chú ý**: Do domain tự tạo (không tồn tại trên google) nên cần phải `add host` ở các máy client.
 
-**Chú ý**: Nên `disable` các mục `Sign-up enable` và `Require admin approval for new sign-ups` ở
-trong `Settings > General > Sign-up restrictions`  vì khi có user mới `root` hay admin sẽ là người
-tạo, chứ không để ai khác tự tạo.
+Thiết lập cần có sau khi cài đặt xong `gitlab`:
 
-**Chú ý**: `Disable` mục `Default to Auto DevOps pipeline for all projects` ở trong
+- Nên `disable` các mục `Sign-up enable` và `Require admin approval for new sign-ups` ở
+trong `Settings > General > Sign-up restrictions`  vì khi có user mới `root` hay admin sẽ là người
+tạo, chứ không để ai khác tự tạo
+- `Disable` mục `Default to Auto DevOps pipeline for all projects` ở trong
 `Settings > CI/CD > Continuous Integration and Deployment`.
 
 ## Triển khai Git workflow
 
 ![git workflow](./assets/02-git-workflow.png)
+
 **Chú ý**: Cần phải thiết lập `Protected branches` để ngăn việc tự ý `merge` hay `commit` vào những
 `branches` quan trọng. `Allow to merge`: Maintainer, còn `Allow to push`: No one. Tuy nhiên những
 thiết lập này cũng nên linh hoạt tuỳ vào văn hoá công ty.

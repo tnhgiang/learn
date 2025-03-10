@@ -43,8 +43,9 @@ công nghệ của doanh nghiệp.
 **Chú ý**: Cài đặt `gitlab-runner` phải trên đúng server (Ví dụ: `dev server`, `staging server`) chứ
 không phải trên `gitlab server`.
 
-1. Cài đặt `gitlab-runner` sử dụng `curl` và `apt install gitlab-runner`.
-    **Chú ý**: `gitlab-runner` sẽ tạo ra một account mới có tên `gitlab-runner`. Kiểm tra trong
+1. Cài đặt `gitlab-runner` sử dụng `curl` và `apt install gitlab-runner`:
+
+    - `gitlab-runner` sẽ tạo ra một account mới có tên `gitlab-runner`. Kiểm tra trong
     `/etc/passwd`.
 
 2. Register `runner` sử dụng `gitlab-runner register` với `registration token` lấy từ
@@ -71,6 +72,7 @@ project`, nó cho phép `runner` được phép chạy đồng thời nhiều d�
 Tiến hành cài CI/CD để tự động [triển khai dự án bằng Java Spring Boot](01-linux.md#triển-khai-dự-án-java-spring-boot)
 
 1. Thiết lập thư mục lưu trữ và những phân quyền cần thiết để chạy `workflow`:
+
     **Chú ý**: Trong thực tế, mình sẽ dùng `user` dành riêng cho mỗi dự án chứ không dùng `user` của
     `gitlab-runner`.
 
@@ -186,7 +188,7 @@ showlog:
 ### Khi nào cần sử dụng `Continous delivery`?
 
 Trong thực tế, `source code` của mình sẽ cần quét qua các công cụ bảo mật, hoặc clean code trong quá
-trình `CI/CD`, và sẽ cần có một người (có đủ quyền) để `kiểm tra` và `munually approve` để tiến hành
+trình `CI/CD`, và sẽ cần có một người (có đủ quyền) để `kiểm tra` và `manually approve` để tiến hành
 deploy dự án lên các môi trường cao hơn (staging, production).
 
 ### Cấu hình `workflow`

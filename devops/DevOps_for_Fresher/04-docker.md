@@ -232,8 +232,7 @@ trường riêng biệt để lưu trữ. Tuy nhiên, trong thực tế doanh ng
 
 ### Dockerhub
 
-1. Login vào `Dockerhub` dùng `docker login` và cung cấp `username` và `password`. Nếu dùng `private
-registry` thì cần cung cấp thêm `url`.
+1. Login vào `Dockerhub` dùng `docker login` và cung cấp `username` và `password`.
 
 2. Đổi tên image theo dạng `domain/project/repo:tag` dùng `docker tag`. Ở đây, domain mặc định là
 `hub.docker.com`.
@@ -388,7 +387,7 @@ Nếu không sử dụng `mount volume` thì sau khi `remove` hoặc `stop` `con
 
 ### Docker compose
 
-`Docker compose` giúp khai báo, thiết lập và quản lý ứng dụng chạy nhiều `containers`.
+`Docker compose` giúp khai báo, thiết lập và quản lý các ứng dụng chạy cùng lúc nhiều `containers`.
 
 ### Docker network
 

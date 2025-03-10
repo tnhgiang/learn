@@ -17,7 +17,8 @@ cao vì vòng đời của linux lên đến hàng chục năm.
 ## Cài đặt ubuntu server
 
 - Cài đặt VMware Fusion.
-- Theo như [tài liệu](https://knowledge.broadcom.com/external/article/303393/understanding-networking-types-in-vmware.html): NAT network adapter mặc định được sử dụng là `vmnet8`. Để lấy gateway IP:
+- Theo như [tài liệu](https://knowledge.broadcom.com/external/article/303393/understanding-networking-types-in-vmware.html)
+thì `NAT network adapter` mặc định được sử dụng là `vmnet8`. Để lấy gateway IP:
 
   ```bash
   vi /Library/Preferences/VMware Fusion/vmnet8/nat.config
@@ -51,7 +52,7 @@ thể truy cập vào phòng khách, ...
 
 ### Người dùng và nhóm
 
-**Chú ý**: Các lệnh dưới đây cần thực hiện với quyền `sudo`.
+**Các lệnh dưới đây cần thực hiện với quyền `sudo`**
 
 Tạo user mới
 
@@ -228,12 +229,7 @@ Build và Run
 **Chú ý**: Dùng google hoặc chatgpt để đọc document về cách triển khai dự án. Đọc về các công cụ cần
 thiết (java, node, ...), cách install các dependencies, cách build cũng như cách run.
 
-**Chú ý**
-Có 3 cách thông dụng để chạy một front-end
-
-1. Webserver
-2. Service
-3. PM2
+**Chú ý**: Có 3 cách thông dụng để chạy một front-end. Đó là: Webserver, Service, PM2.
 
 ### Run frontend bằng NGINX webserver
 
@@ -277,8 +273,8 @@ Cách thường sử dụng nhất cho các dự án frontend
   usermode -aG todolist www-data
   ```
 
-- Tiến hành restart lại nginx
-  **Chú ý**: Nếu không thực hiện bước này. `www-data` user của nginx không thể access vào thư mục của project. Nên chạy sẽ bị lỗi.
+- Tiến hành restart lại nginx. Nếu không thực hiện bước này. `www-data` user của nginx không thể
+access vào thư mục của project. Nên chạy sẽ bị lỗi.
 
 ### Run frontend bằng service
 
